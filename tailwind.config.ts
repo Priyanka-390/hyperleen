@@ -18,7 +18,13 @@ const config: Config = {
     'dark-black':"#084CAF",
     "dark-grey":"#4E4E4E",
     "light-blue":"0A02EC14"
-  }
+      },
+    container: {
+        center: true,
+        padding: {
+          DEFAULT: "20px",
+        },
+      },
     },
   },
   plugins: [],
