@@ -1,59 +1,63 @@
-"use client"
-import { useState } from 'react';
-// import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
+"use client";
+import { useEffect, useRef, useCallback } from "react";
+// import { MinusIcon, PlusIcon } from "./Icons";
 
-type AccordionItemProps = {
-  title: string;
-  content: string;
+type AccordionProps = {
+  data: { title: string; description: string };
   isOpen: boolean;
   onClick: () => void;
 };
 
-const AccordionItem = ({ title, content, isOpen, onClick }: AccordionItemProps) => {
+const Accordion = ({ data, isOpen, onClick }: AccordionProps) => {
+  const contentRef = useRef<HTMLDivElement>(null);
+
+  const updateMaxHeight = useCallback(() => {
+    if (contentRef.current) {
+      contentRef.current.style.maxHeight = isOpen
+        ? `${contentRef.current.scrollHeight}px`
+        : "0px";
+    }
+  }, [isOpen]);
+
+  useEffect(() => {
+    updateMaxHeight();
+    window.addEventListener("resize", updateMaxHeight);
+    return () => window.removeEventListener("resize", updateMaxHeight);
+  }, [isOpen, updateMaxHeight]);
+
   return (
-    <div className="border-b border-gray-200">
+    <div
+      className={`border border-solid bg-white backdrop-blur-[26.4px] bg-opacity-[3%] after:w-full after:h-full after:opacity-0 after:origin-top after:bg-faq-gradient after:top-0 after:left-0 after:absolute relative ${
+        isOpen
+          ? "after:opacity-100 after:duration-300 after:ease-linear border-picton-blue border-opacity-100"
+          : "after:opacity-0 border-opacity-30 border-white after:duration-300 after:ease-linear"
+      }`}
+    >
       <button
+        className={`w-full lg:pt-[19px] pt-3 px-4 md:px-5 md:pt-4 text-left font-orbitron font-medium sm:text-lg text-base md:text-xl lg:text-2xl !leading-150 text-white flex justify-between items-center relative z-10 ${
+          !isOpen ? "pb-[19px]" : "pb-0"
+        }`}
         onClick={onClick}
-        className="flex items-center justify-between w-full p-4 text-left focus:outline-none"
+        aria-label="accordion button"
+        aria-expanded={isOpen}
+        aria-controls={`accordion-content-${data.title}`}
       >
-        <span>{title}</span>
-        {/* {isOpen ? <FaChevronUp /> : <FaChevronDown />} */}
+        {data.title}
+        <div className="md:min-w-10 min-h-8 min-w-8 md:min-h-10 rounded-full border border-solid border-white flex items-center justify-center ml-1.5">
+          {/* {isOpen ? <MinusIcon /> : <PlusIcon />} */}
+        </div>
       </button>
       <div
-        className={`overflow-hidden transition-max-height duration-300 ease-in-out ${isOpen ? 'max-h-screen' : 'max-h-0'}`}
+        ref={contentRef}
+        id={`accordion-content-${data.title}`}
+        style={{ maxHeight: "0px", transition: "max-height 0.3s ease" }}
+        className={`overflow-hidden ${isOpen ? "opacity-100" : ""}`}
+        aria-hidden={!isOpen}
       >
-        <div className="p-4">
-          {content}
-        </div>
+        <p className="font-poppins pl-4 md:pl-5 pb-4 font-normal sm:text-base text-sm md:text-lg text-white opacity-70 !leading-160 relative z-10 mt-1 sm:mt-1.5 max-w-[759px] pr-16 lg:pr-0">
+          {data.description}
+        </p>
       </div>
-    </div>
-  );
-};
-
-const Accordion = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
-
-  const items = [
-    { title: 'Item 1', content: 'Content for Item 1' },
-    { title: 'Item 2', content: 'Content for Item 2' },
-    { title: 'Item 3', content: 'Content for Item 3' },
-  ];
-
-  const handleClick = (index: number) => {
-    setOpenIndex(index === openIndex ? null : index);
-  };
-
-  return (
-    <div className="border border-gray-200 rounded-md">
-      {items.map((item, index) => (
-        <AccordionItem
-          key={index}
-          title={item.title}
-          content={item.content}
-          isOpen={index === openIndex}
-          onClick={() => handleClick(index)}
-        />
-      ))}
     </div>
   );
 };
