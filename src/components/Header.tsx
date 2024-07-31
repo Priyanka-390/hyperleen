@@ -16,7 +16,7 @@ const Header = () => {
             <button className='px-6 py-2.5 shadow-sky-blue border-[0.5px] border-dark-blue rounded-[122px] bg-sky-blue text-dark-blue font-poppins font-normal text-base leading-150'>Accurate</button>
           </div>
           <h1 className='text-custom-9xl mb-5 font-gilroy-medium font-medium max-w-[757px] text-center mx-auto text-black'>Transform Your <span className='text-dark-blue'>Data into AI</span> Insights</h1>
-            <p></p>
+            <p className=''></p>
         </div>
           </div>
     </div>
