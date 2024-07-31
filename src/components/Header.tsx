@@ -31,8 +31,7 @@ const Header = () => {
             <button className='px-6 py-2.5 shadow-sky-blue border-[0.5px] border-dark-blue rounded-[122px] bg-sky-blue text-dark-blue font-poppins font-normal text-base leading-150'>Accurate</button>
           </div>
           <h1 className='text-custom-9xl leading-100 mb-5 ff-gilroy-medium font-medium max-w-[757px] text-center mx-auto text-black'>Transform Your <span className='text-dark-blue'>Data into AI</span> Insights</h1>
-            <Paragraph ClassName='max-w-[634px] mx-auto mb-10 text-center' paraText='Unlock the full potential of your AI models with our premium data labeling services. Our expert annotators ensure your data is meticulously labeled, enabling superior performance and insights.' />
-            
+            <Paragraph className='max-w-[634px] mx-auto mb-10 text-center' paraText='Unlock the full potential of your AI models with our premium data labeling services. Our expert annotators ensure your data is meticulously labeled, enabling superior performance and insights.' />
         </div>
           </div>
     </div>

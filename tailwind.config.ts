@@ -9,26 +9,25 @@ const config: Config = {
   theme: {
     extend: {
   fontFamily:{
-    'poppins':["'Poppins',sans-serif"]
-      },
-      fontSize: {
-        "custom-9xl":"80px"
-      },
+    'poppins':"'Poppins',sans-serif"
+  },
+  fontSize: {
+    "custom-9xl":"80px"
+  },
   colors:{
-    'dark-blue':"#084CAF",
-    "dark-grey":"#4E4E4E",
+    "dark-blue": "#084CAF",
+    "dark-grey": "#4E4E4E",
     "light-blue": "0A02EC14",
     "sky-blue": "#EBEBFD",
       },
-      lineHeight: {
-        "100": "100%",
-        140: "140%",
-          "120":"120%",
-        "150":"150%"
-      },
-       boxShadow: {
-        "sky-blue":"0px 4px 16px 0px #084CAF1F",
-      },
+      lineHeight:{
+        140:"140%",
+             "120":"120%",
+                "150":"150%",
+              },
+              boxShadow:{
+                'primary-btn':"4px 4px 20px 0px #084CAF4D",
+              },
       container: {
         center: true,
         padding: {

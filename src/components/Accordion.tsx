@@ -6,9 +6,10 @@ type AccordionProps = {
   data: { title: string; description: string };
   isOpen: boolean;
   onClick: () => void;
+  className?: string;
 };
 
-const Accordion = ({ data, isOpen, onClick }: AccordionProps) => {
+const Accordion = ({ data, isOpen, onClick ,className}: AccordionProps) => {
   const contentRef = useRef<HTMLDivElement>(null);
 
   const updateMaxHeight = useCallback(() => {
@@ -27,7 +28,7 @@ const Accordion = ({ data, isOpen, onClick }: AccordionProps) => {
 
   return (
     <div
-      className={`border-[0.5px] mb-5 rounded-2xl overflow-hidden border-dark-grey border-solid ${
+      className={`border-[0.5px] mb-5 rounded-2xl overflow-hidden border-dark-grey border-solid ${className} ${
         isOpen
           ? " border-transparent"
           : " border-dark-grey"
