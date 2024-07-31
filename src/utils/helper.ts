@@ -1,27 +1,37 @@
 export const FAQ_LIST = [
     {
-      title: "What is 1v2 Studio?",
+      title: "What is data labeling?",
       description:
-        " 1v2 Studio is an indie game development studio dedicated to creating innovative and engaging experiences on the Roblox platform.",
+        " Data labeling involves annotating or tagging data to make it understandable for machines. It helps AI systems learn and make accurate predictions.",
     },
     {
-      title: "How can I contact 1v2 Studio?",
+      title: "Why is data labeling important?",
       description:
-        " 1v2 Studio is an indie game development studio dedicated to creating innovative and engaging experiences on the Roblox platform.",
+      " Data labeling involves annotating or tagging data to make it understandable for machines. It helps AI systems learn and make accurate predictions.",
     },
     {
-      title: "Is Lenard The Lemur secure?",
+      title: "How does your data labeling service work?",
       description:
-        " 1v2 Studio is an indie game development studio dedicated to creating innovative and engaging experiences on the Roblox platform.",
+      " Data labeling involves annotating or tagging data to make it understandable for machines. It helps AI systems learn and make accurate predictions.",
     },
     {
-      title: "What types of games does 1v2 Studio develop?",
+      title: "What types of data do you label?",
       description:
-        " 1v2 Studio is an indie game development studio dedicated to creating innovative and engaging experiences on the Roblox platform.",
+      " Data labeling involves annotating or tagging data to make it understandable for machines. It helps AI systems learn and make accurate predictions.",
     },
     {
-      title: "Can I collaborate with 1v2 Studio on a game project?",
+      title: "How do you ensure data quality?",
       description:
-        " 1v2 Studio is an indie game development studio dedicated to creating innovative and engaging experiences on the Roblox platform.",
+      " Data labeling involves annotating or tagging data to make it understandable for machines. It helps AI systems learn and make accurate predictions.",
+    },
+    {
+      title: "What sets your data labeling service apart?",
+      description:
+      " Data labeling involves annotating or tagging data to make it understandable for machines. It helps AI systems learn and make accurate predictions.",
+    },
+    {
+      title: "How can I get started with your data labeling service?",
+      description:
+      " Data labeling involves annotating or tagging data to make it understandable for machines. It helps AI systems learn and make accurate predictions.",
     },
   ];

@@ -3,6 +3,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 @font-face {
   font-family: Gilroy-Medium;
   src: url(/public/assets/fonts/Gilroy-Medium.ttf);
@@ -11,4 +13,16 @@
   font-family: Gilroy-Semibold;
   src: url(/public/assets/fonts/Gilroy-SemiBold.ttf);
 }
-
+@font-face {
+  font-family: Gilroy-Regular;
+  src: url(/public/assets/fonts/Gilroy-Regular.ttf);
+}
+.ff-gilroy-regular{
+  font-family: 'Gilroy-Regular',sans-serif !important;
+}
+.ff-gilroy-medium{
+  font-family: 'Gilroy-Medium',sans-serif !important;
+}
+.ff-gilroy-semibold{
+  font-family: 'Gilroy-Semibold',sans-serif !important;
+}
