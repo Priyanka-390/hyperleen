@@ -3,8 +3,7 @@ import { FAQ_LIST } from "@/utils/helper";
 import { useState } from "react";
 import Accordion from "./Accordion";
 import Heading from "./common/Heading";
-import Paragraph from "./common/Para";
-import { PrimaryButton, SecondaryButton } from "./common/Buttons";
+import Paragraph from "./common/Paragraph";
 
 const Faqs = () => {
   const [openIndex, setOpenIndex] = useState<number>(0);
