@@ -34,6 +34,15 @@ const config: Config = {
           DEFAULT: "20px",
         },
       },
+      backgroundImage:{
+        'footer':"url(/assets/images/webp/footer-bg.webp)",
+        'footer-line':'linear-gradient(90deg, rgba(199, 199, 199, 0) 0%, #CDCDCD 34.5%, #CDCDCD 65%, rgba(196, 196, 196, 0) 100%)',
+        
+        
+      },
+      backgroundSize:{
+        full: "100% 100%"
+      }
     },
   },
   plugins: [],

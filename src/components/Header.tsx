@@ -5,7 +5,7 @@ import Paragraph from './common/Paragraph'
 
 const Header = () => {
   return (
-      <div className='min-h-[715px] flex flex-col'>
+      <div className='min-h-[715px] flex flex-col overflow-x-clip'>
           <NavBar/>
       <div className='flex-grow items-center justify-center flex relative'>
          <Image
