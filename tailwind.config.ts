@@ -10,16 +10,20 @@ const config: Config = {
     extend: {
   fontFamily:{
     'poppins':["'Poppins',sans-serif"]
-  },
+      },
+      fontSize: {
+        "custom-9xl":"80px"
+      },
   colors:{
-    'dark-black':"#084CAF",
+    'dark-blue':"#084CAF",
     "dark-grey":"#4E4E4E",
     "light-blue": "0A02EC14",
     "sky-blue": "#EBEBFD",
       },
-      lineHeight:{
+      lineHeight: {
+        "100": "100%",
         140: "140%",
-          "120":"120",
+          "120":"120%",
         "150":"150%"
       },
        boxShadow: {
