@@ -8,25 +8,21 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      fontSize: {
-        "custom-9xl":"80px"
+  fontFamily:{
+    'poppins':["'Poppins',sans-serif"]
+  },
+  colors:{
+    'dark-black':"#084CAF",
+    "dark-grey":"#4E4E4E",
+    "light-blue": "0A02EC14",
+    "sky-blue": "#EBEBFD",
       },
-      fontFamily: {
-        "gilroy-medium": "Gilroy Medium",
-        "gilroy-semibold": "Gilroy Semibold",
-        poppins: ["'Poppins',sans-serif"],
-      },
-      colors: {
-        "dark-blue": "#084CAF",
-        "dark-grey": "#4E4E4E",
-        "light-blue": "0A02EC14",
-        "sky-blue": "#EBEBFD"
-      },
-      lineHeight: {
-        "120":"120",
+      lineHeight:{
+        140: "140%",
+          "120":"120",
         "150":"150%"
       },
-      boxShadow: {
+       boxShadow: {
         "sky-blue":"0px 4px 16px 0px #084CAF1F",
       },
       container: {
