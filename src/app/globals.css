@@ -3,6 +3,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .mobileView {
+    @apply max-lg:bg-white z-20 max-lg:gap-5 max-lg:fixed max-lg:items-center max-lg:justify-center max-lg:flex-col max-lg:top-0 max-lg:w-full max-lg:h-full duration-300;
+  }
+    .navLinkHover {
+   @apply after:absolute relative hover:after:left-0 hover:text-dark-blue after:bottom-0 after:w-0 after:left-[50%] after:h-[1px] after:bg-dark-blue hover:text-opacity-100 hover:after:w-full after:duration-300;
+  }
+}
 @font-face {
   font-family: Gilroy-Medium;
   src: url(/public/assets/fonts/Gilroy-Medium.ttf);

@@ -18,14 +18,14 @@ export const PrimaryButton = ({
     <Link
       href={href}
       aria-label={arialLabel}
-      className={`bg-dark-blue font-poppins  text-white text-lg leading-150 text-center shadow-primary-btn py-3.5 px-6  rounded-full ${className}`}
+      className={`bg-dark-blue font-poppins  text-white sm:text-lg text-base leading-150 text-center shadow-primary-btn sm:py-3.5 py-3 md:px-6 px-3 rounded-full ${className}`}
     >
       {text}
     </Link>
   ) : (
     <button
       aria-label={arialLabel}
-      className={`bg-dark-blue font-poppins  text-white text-lg leading-150 text-center shadow-primary-btn py-3.5 px-6  rounded-full ${className}`}
+      className={`bg-dark-blue font-poppins  text-white sm:text-lg text-base leading-150 text-center shadow-primary-btn sm:py-3.5 py-2.5 md:px-6 px-3  rounded-full ${className}`}
     >
       {text}
     </button>
