@@ -11,8 +11,9 @@ const config: Config = {
   fontFamily:{
     'poppins':"'Poppins',sans-serif"
   },
-  fontSize: {
-    "custom-9xl":"80px"
+      fontSize: {
+    "custom-3xl":"32px",
+    "custom-8xl":"80px"
   },
   colors:{
     "dark-blue": "#084CAF",
@@ -20,7 +21,9 @@ const config: Config = {
     "light-blue": "0A02EC14",
     "sky-blue": "#EBEBFD",
       },
-      lineHeight:{
+      lineHeight: {
+        "100": "100%",
+        "135":"135%",
         140:"140%",
              "120":"120%",
                 "150":"150%",

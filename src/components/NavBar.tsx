@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from "next/image";
 import { NAV_LIST } from '@/utils/helper';
 import { useState } from 'react';
+import { PrimaryButton, SecondaryButton } from './common/Buttons';
 
 const NavBar = () => {
     const [show, setShow] = useState(true);
@@ -16,7 +17,7 @@ const NavBar = () => {
   }
   return (
     <nav>
-       <div className="container my-[17px] xl:max-w-[1140px] xl:px-0">
+       <div className="container sm:my-[17px] my-3 xl:max-w-[1140px] xl:px-0">
          <div className='flex justify-between items-center'>
            <Link aria-label="logo" href="/">
                 <Image
@@ -32,11 +33,11 @@ const NavBar = () => {
             }`}>
             {NAV_LIST.map((data, i) => (
                <li key={i}>
-                <Link  onClick={showNav} aria-label="logo" href={data.URL} className='font-poppins p-2.5 text-dark-grey leading-150 font-normal text-base duration-300 NavLinkHover'>{ data.title}</Link>
+                <Link  onClick={showNav} aria-label="logo" href={data.URL} className='font-poppins p-2.5 text-dark-grey leading-150 font-normal text-base duration-300 navLinkHover'>{ data.title}</Link>
                </li>
             ))}
-            <li className='pl-6'><button>Sign Up</button></li>
-             <li><button>Contact Us</button></li>
+             <SecondaryButton className='ml-6' text="Sign Up" href="Sign Up" arialLabel="Sign Up" />
+            <PrimaryButton className='ml-[2px]' text="Contact Us" href="Contact Us" arialLabel="Contact Us" />
           </ul>
             <label className="lg:hidden" onClick={showNav}>
               {show ? (
@@ -54,7 +55,7 @@ const NavBar = () => {
             </label>
          </div>
       </div>
-      <div className='w-full mt-[1px] bg-dark-grey h-[0.5px]'></div>
+      <div className='w-full bg-dark-grey h-[0.5px]'></div>
     </nav>
   )
 }

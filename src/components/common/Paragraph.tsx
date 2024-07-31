@@ -5,7 +5,7 @@ interface Paraprops{
 
 const Paragraph = ({paraText,className}:Paraprops) => {
   return (
-      <p className={`font-poppins font-normal text-base text-dark-grey ${className}`}>{paraText}</p>
+      <p className={`font-poppins font-normal sm:text-base text-sm leading-150 text-dark-grey ${className}`}>{paraText}</p>
   )
 }
 
