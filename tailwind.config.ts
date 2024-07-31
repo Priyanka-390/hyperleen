@@ -22,8 +22,11 @@ const config: Config = {
       },
       lineHeight:{
 140:"140%",
-     "120":"120",
+     "120":"120%",
         "150":"150%",
+      },
+      boxShadow:{
+        'primary-btn':"4px 4px 20px 0px #084CAF4D",
       },
     container: {
         center: true,
