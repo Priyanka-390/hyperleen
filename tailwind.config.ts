@@ -15,7 +15,8 @@ const config: Config = {
     "custom-3xl":"32px",
     "custom-8xl":"80px"
   },
-  colors:{
+      colors: {
+    "light-sky-blue":"#084CAF52",
     "dark-blue": "#084CAF",
     "dark-grey": "#4E4E4E",
     "light-blue": "0A02EC14",
@@ -29,7 +30,9 @@ const config: Config = {
                 "150":"150%",
               },
               boxShadow:{
-                'primary-btn':"4px 4px 20px 0px #084CAF4D",
+                'primary-btn': "4px 4px 20px 0px #084CAF4D",
+                'team-social-icons':"0px 4px 4px 0px #00000040",
+
               },
       container: {
         center: true,
@@ -40,7 +43,7 @@ const config: Config = {
       backgroundImage:{
         'footer':"url(/assets/images/webp/footer-bg.webp)",
         'footer-line':'linear-gradient(90deg, rgba(199, 199, 199, 0) 0%, #CDCDCD 34.5%, #CDCDCD 65%, rgba(196, 196, 196, 0) 100%)',
-        
+        'team':"url(/assets/images/webp/team-bg.webp)",
         
       },
       backgroundSize:{
