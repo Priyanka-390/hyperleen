@@ -13,7 +13,7 @@ const Faqs = () => {
   };
 
   return (
-    <div className="">
+    <div className="pt-20">
       <div className="xl:max-w-[1440px] container xl:px-0 ">
         <Heading darkBlueText="FAQs" className=" text-center mb-4"/>
    <Paragraph paraText="You have got Question.  We have got Answer" className="text-center pb-14"/>

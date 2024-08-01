@@ -12,6 +12,7 @@ const config: Config = {
     'poppins':"'Poppins',sans-serif"
   },
       fontSize: {
+"custom-sm":"15.78px",
     "custom-3xl":"32px",
     "custom-8xl":"80px"
   },
@@ -20,13 +21,16 @@ const config: Config = {
     "dark-grey": "#4E4E4E",
     "light-blue": "0A02EC14",
     "sky-blue": "#EBEBFD",
+    "rich-black":"#010101",
       },
       lineHeight: {
         "100": "100%",
         "135":"135%",
         140:"140%",
+        145:"145%",
              "120":"120%",
                 "150":"150%",
+                "158":"158%",
               },
               boxShadow:{
                 'primary-btn':"4px 4px 20px 0px #084CAF4D",
