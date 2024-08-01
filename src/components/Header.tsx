@@ -24,8 +24,11 @@ const Header = () => {
         alt="right-line"
       />
               <div className='container xl:max-w-[1140px] xl:px-0'>
-                  <p className='font-poppins relative after:absolute after:content-[url(/assets/images/svg/solution-line.svg)] after:left-[41%] before:absolute mb-6 before:rotate-180 before:right-[41%] before:top-[10%] after:top-[-3%] before:content-[url(/assets/images/svg/solution-line.svg)] font-normal text-base leading-150 text-center text-dark-blue'>AI Solutions</p>
-          <div className='flex lg:gap-6 gap-3 flex-wrap lg:pb-11 md:pb-8 pb-5 justify-center'>
+                  <div className="max-w-[92px] mb-6 w-full relative after:absolute after:content-[url(/assets/images/svg/solution-line.svg)] after:left-[-62%] before:absolute mx-auto before:rotate-180 before:right-[-62%] before:top-[10%] after:top-[-7%] before:content-[url(/assets/images/svg/solution-line.svg)]">
+                    <p className='font-poppins  font-normal text-base leading-150 text-center text-dark-blue'>AI Solutions</p>
+                    </div>
+                              <div className='flex lg:gap-6 gap-3 flex-wrap lg:pb-11 md:pb-8 pb-5 justify-center'>
+                  
             {HEADER_BUTTONS.map((data, i) => (
               <button aria-label='header-btn' key={i} className='md:px-6 px-3 sm:py-2.5 py-1.5 shadow-sky-blue border-[0.5px] border-dark-blue rounded-[122px] bg-sky-blue text-dark-blue font-poppins font-normal sm:text-base text-sm leading-150'>{data.title}</button>
             ))}
