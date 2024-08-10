@@ -1,4 +1,4 @@
-import React from 'react'
+import Image from "next/image";
 import Heading from './common/Heading'
 import Paragraph from './common/Paragraph'
 
@@ -12,8 +12,8 @@ const Label = () => {
            <Paragraph className='mb-6' paraText='Efficient and Accurate  Labeling on Image.'/>
             <div className='p-5 border-[0.5px] border-dark-blue rounded-2xl xl:w-[462px]'>
               <p className='font-poppins font-semibold mb-5 text-base leading-150'>Upload Image and add label</p>
-              <div className='p-5 rounded-xl bg-'>
-
+              <div className='p-5 rounded-xl mb-4 bg-rich-black bg-opacity-5'>
+                 <Image src="/assets/images/webp/label-card.webp" width={382} height={165} alt="label-card" className='' />
               </div>
             </div>
           </div>
